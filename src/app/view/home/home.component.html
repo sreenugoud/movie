@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Booking System</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <style>
+      .movie-card {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="container">
+      <h1 class="text-center mt-4">Now Showing</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card movie-card">
+            <img
+              src="assets/joker.avif"
+              class="card-img-top"
+              alt="Movie Title"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Joker</h5>
+              <p class="card-text">Psychological Thriller,</p>
+              <a routerLink="/login"  class="btn btn-primary">Book Now</a>
+              <a href="https://www.youtube.com/watch?v=_OKAwz2MsJs" target="_blank" style="margin-left: 100px" class="btn btn-primary"
+                >Trailer</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card movie-card">
+            <img
+              src="assets/devara.avif"
+              class="card-img-top"
+              alt="Movie Title"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Devara</h5>
+              <p class="card-text">Action Movie by Jr.NTR.</p>
+              <a routerLink="/login" class="btn btn-primary">Book Now</a>
+              <a href="https://www.youtube.com/watch?v=_OKAwz2MsJs" target="_blank"style="margin-left: 100px" class="btn btn-primary"
+                >Trailer</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card movie-card">
+            <img
+              src="assets/tumbbad.avif"
+              class="card-img-top"
+              alt="Movie Title"
+            />
+            <div class="card-body">
+              <h5 class="card-title">The Backingham Murder</h5>
+              <p class="card-text">Bebo , wo kon h</p>
+              <a routerLink="/login" class="btn btn-primary">Book Now</a>
+              <a href="https://www.youtube.com/watch?v=_OKAwz2MsJs" target="_blank"style="margin-left: 100px" class="btn btn-primary"
+                >Trailer</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card movie-card">
+            <img
+              src="assets/kareena.avif"
+              class="card-img-top"
+              alt="Movie Title"
+            />
+            <div class="card-body">
+              <h5 class="card-title">The Backingham Murder</h5>
+              <p class="card-text">Bebo , wo kon h</p>
+              <a routerLink="/login" class="btn btn-primary">Book Now</a>
+              <a href="https://www.youtube.com/watch?v=_OKAwz2MsJs" target="_blank" style="margin-left: 100px" class="btn btn-primary"
+                >Trailer</a>
+             </div>
+          </div>
+        </div>
+        <!-- Add more movie cards as needed -->
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</html>
